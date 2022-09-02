@@ -1,20 +1,14 @@
 <template>
 	<div class="popup_page">
-		pipUP 页面
+		<a-button type="primary">Primary Button</a-button>
 	</div>
 </template>
 
-<script>
-	export default {
-
-	}
+<script setup>
 </script>
 
 <style lang="less" scoped>
 	.popup_page{
 		color: red;
-		.popup_page_main{
-			color: green;
-		}
 	}
 </style>

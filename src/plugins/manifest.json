@@ -5,7 +5,6 @@
 	"version": "1.2.0",
 	"browser_action": {
 		"default_title": "my-vue3-plugin",
-		// "default_icon": "assets/images/icon48.png",
 		"default_popup": "popup.html"
 	},
 	"permissions": [],
@@ -13,9 +12,6 @@
 		"scripts": ["js/background.js"]
 	},
 	"icons": {
-		// "16": "assets/images/icon16.png",
-		// "48": "assets/images/icon48.png",
-		// "128": "assets/images/icon128.png"
 	},
 	"content_scripts": [
 		{
@@ -25,5 +21,9 @@
 			"run_at": "document_idle"
 		}
 	],
+	"chrome_url_overrides": {
+		"default_title": "newtab",
+		"newtab": "newtab.html"
+	  },
 	"web_accessible_resources": ["js/inject.js"]
 }

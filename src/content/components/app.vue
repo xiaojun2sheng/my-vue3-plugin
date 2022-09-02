@@ -2,14 +2,14 @@
 	<div class="content_page">
 		content_page
 		<div class="content_page_main">
-			content_page_main
+			content_page_main11111
 		</div>
 	</div>
 </template>
 
 <script>
 	export default {
-
+	
 	}
 </script>
 

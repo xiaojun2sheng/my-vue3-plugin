@@ -27,7 +27,7 @@ const plugins = [
 // 页面文件
 const pages = {};
 // 配置 popup.html 页面
-const chromeName = ["popup"];
+const chromeName = ["popup", "newtab"];
 
 chromeName.forEach(name => {
   	pages[name] = {
@@ -39,11 +39,12 @@ chromeName.forEach(name => {
 
 module.exports = {
 	pages,
+	publicPath: '/',
 	productionSourceMap: false,
 	// 配置 content.js background.js
 	configureWebpack: {
 		entry: {
-			content: "./src/content/main.js",
+			content: "./src/newtab/main.js",
 			background: "./src/background/main.js"
 		},
 		output: {
@@ -62,5 +63,8 @@ module.exports = {
 			config.output.filename('js/[name].js').end()
 			config.output.chunkFilename('js/[name].js').end()
 		}
-	}
+	},
+	devServer: {
+        port: 3008,
+    }
 }
