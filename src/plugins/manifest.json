@@ -1,10 +1,10 @@
 {
 	"manifest_version": 2,
-	"name": "my-vue3-plugin",
-	"description": "基于vue3.x版本的chrome插件",
+	"name": "EfficientTools",
+	"description": "我们在这里见面，就足以证明你是个有品位的人",
 	"version": "1.2.0",
 	"browser_action": {
-		"default_title": "my-vue3-plugin",
+		"default_title": "EfficientTools",
 		"default_popup": "popup.html"
 	},
 	"permissions": [],
@@ -15,14 +15,14 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["https://*.taobao.com/*"],
+			// "matches": ["https://*.taobao.com/*"],
+			"matches": ["http://*/*", "https://*/*"],
 			"css": ["css/content.css"],
-			"js": ["js/content.js"],
+			"js": ["js/inject.js", "js/content.js"],
 			"run_at": "document_idle"
 		}
 	],
 	"chrome_url_overrides": {
-		"default_title": "newtab",
 		"newtab": "newtab.html"
 	  },
 	"web_accessible_resources": ["js/inject.js"]

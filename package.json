@@ -10,6 +10,7 @@
   "dependencies": {
     "ant-design-vue": "^3.3.0-beta.3",
     "core-js": "^3.8.3",
+    "moment": "^2.29.4",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -25,9 +26,9 @@
     "less-loader": "6.0.0"
   },
   "eslintConfig": {
-    "root": true,
+    "root": false,
     "env": {
-      "node": true
+      "node": false
     },
     "extends": [
       "plugin:vue/vue3-essential",

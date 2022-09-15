@@ -1,1 +1,1 @@
-console.log('this is background main.js')
+console.log('你是个有品位的人')

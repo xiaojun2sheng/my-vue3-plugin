@@ -38,6 +38,7 @@ chromeName.forEach(name => {
 });
 
 module.exports = {
+	lintOnSave:false,
 	pages,
 	publicPath: '/',
 	productionSourceMap: false,
