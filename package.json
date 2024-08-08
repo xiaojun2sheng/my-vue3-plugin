@@ -12,6 +12,7 @@
     "ant-design-vue": "^3.3.0-beta.3",
     "core-js": "^3.8.3",
     "moment": "^2.29.4",
+    "v-code-diff": "^1.12.1",
     "vue": "^3.2.13"
   },
   "devDependencies": {

@@ -25,15 +25,16 @@ import moment from 'moment';
 import 'moment/dist/locale/zh-cn'
 import { QuestionCircleOutlined } from '@ant-design/icons-vue';
 import Home from './pages/home.vue'
-import Tools from './pages/tools.vue'
+import Diff from './pages/diff.vue'
 import MarkDown from './pages/markDown.vue'
 
 let current = ref(['home'])
 
-let pageVal = ref(Home)
+let pageVal = ref(Diff)
 
 const MenuList = [
 	{key: 'home', title: '首页', page: Home},
+	{key: 'diff', title: 'diff比对', page: Diff},
 	{key: 'markDown', title: 'MarkDown转换', page: MarkDown}
 ]
 
