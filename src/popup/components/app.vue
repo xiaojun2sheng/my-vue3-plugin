@@ -11,16 +11,19 @@
 					</a-menu-item>
 				</a-menu>
 			</template>
-			<a-button>
-				分辨率调节<DownOutlined />
+			<a-button>分辨率调节<DownOutlined />
 			</a-button>
 		</a-dropdown>
+		<div>
+			<a-slider v-model:value="lightDarkValue" :min="1" :max="100" @change="lightChange"/>
+			<a-switch v-model:checked="lightDarkSwitch" />
+		</div>
 	</div>
 </template>
 
 <script setup>
 import { ref} from 'vue'
-import { UserOutlined, DownOutlined } from '@ant-design/icons-vue';
+import { DownOutlined } from '@ant-design/icons-vue';
 
 
 // 常见的分辨率
@@ -45,6 +48,12 @@ const selectWindowSize = ([width, height]) => {
 	}
 }
 
+let lightDarkValue = ref(0)
+let lightDarkSwitch = ref(false)
+
+const lightChange = () => {
+	console.log(lightDarkValue.value)
+}
 
 </script>
 

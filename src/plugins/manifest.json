@@ -1,10 +1,10 @@
 {
 	"manifest_version": 2,
-	"name": "EfficientTools",
+	"name": "ZZWTools",
 	"description": "我们在这里见面，就足以证明你是个有品位的人",
 	"version": "1.2.0",
 	"browser_action": {
-		"default_title": "EfficientTools",
+		"default_title": "ZZWTools",
 		"default_popup": "popup.html"
 	},
 	"permissions": [],
@@ -15,7 +15,6 @@
 	},
 	"content_scripts": [
 		{
-			// "matches": ["https://*.taobao.com/*"],
 			"matches": ["http://*/*", "https://*/*"],
 			"css": ["css/content.css"],
 			"js": ["js/inject.js", "js/content.js"],

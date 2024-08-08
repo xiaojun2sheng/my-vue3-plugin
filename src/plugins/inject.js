@@ -5,5 +5,5 @@ window.onload = function () {
 	pageTitle = window.document.title
 	pageUrl = window.location.href
     console.log('pageTitle' + pageTitle)
-    console.log('pageTitle' + pageTitle)
+    console.log('pageUrl' + pageUrl)
 }
