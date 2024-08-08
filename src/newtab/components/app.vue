@@ -9,7 +9,9 @@
 			</a-menu-item>
 		</a-menu>
 
-		<component :is="pageVal"></component>
+		<KeepAlive>
+			<component :is="pageVal"></component>
+		</KeepAlive>
 
 		<div class="contact_me">
 			<a href="dingtalk://dingtalkclient/action/sendmsg?dingtalk_id=qbgskcd">
@@ -27,15 +29,17 @@ import { QuestionCircleOutlined } from '@ant-design/icons-vue';
 import Home from './pages/home.vue'
 import Diff from './pages/diff.vue'
 import MarkDown from './pages/markDown.vue'
+import CompressImg from './pages/compressImg.vue'
 
 let current = ref(['home'])
 
-let pageVal = ref(Diff)
+let pageVal = ref(CompressImg)
 
 const MenuList = [
 	{key: 'home', title: '首页', page: Home},
 	{key: 'diff', title: 'diff比对', page: Diff},
-	{key: 'markDown', title: 'MarkDown转换', page: MarkDown}
+	{key: 'markDown', title: 'MarkDown转换', page: MarkDown},
+	{key: 'compressImg', title: '图片压缩', page: CompressImg}
 ]
 
 </script>

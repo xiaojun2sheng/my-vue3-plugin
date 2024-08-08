@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; font-src 'self' data:; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *;  img-src 'self' blob: data:; style-src 'self' http://* 'unsafe-inline'; font-src 'self' data:; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+
     <title>浏览器插件</title>
   </head>
   <body>
-    <!-- <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript> -->
     <div id="app"></div>
   </body>
   <style>

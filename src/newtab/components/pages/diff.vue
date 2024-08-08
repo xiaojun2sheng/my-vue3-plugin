@@ -30,7 +30,6 @@
  * https://github.com/Shimada666/v-code-diff
  */
 import { onMounted, ref, computed} from 'vue'
-import moment from 'moment';
 import { CodeDiff } from 'v-code-diff'
 
 const oldText = ref('')
