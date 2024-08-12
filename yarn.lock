@@ -4997,6 +4997,11 @@ joi@^17.4.0:
     "@sideway/formula" "^3.0.0"
     "@sideway/pinpoint" "^2.0.0"
 
+js-image-compressor@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/js-image-compressor/-/js-image-compressor-2.0.0.tgz#93ba3f35710189bd5d1fe3e50825117065f0c6f8"
+  integrity sha512-HUhGwVxwLsxXjP7ztQ1CF2iE6X1YRW1lcalJZYfNymPvuO4kK1bbLVeumVDZs6OPDUK1c0BPwhVH/SsRso8Jbw==
+
 js-message@1.0.7:
   version "1.0.7"
   resolved "https://registry.npmjs.org/js-message/-/js-message-1.0.7.tgz"
