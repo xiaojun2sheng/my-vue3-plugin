@@ -30,6 +30,7 @@ import Home from './pages/home.vue'
 import Diff from './pages/diff.vue'
 import MarkDown from './pages/markDown.vue'
 import CompressImg from './pages/compressImg.vue'
+import JsonFormat from './pages/jsonFormat.vue';
 
 let current = ref(['home'])
 
@@ -39,7 +40,9 @@ const MenuList = [
 	{key: 'home', title: '首页', page: Home},
 	{key: 'diff', title: 'diff比对', page: Diff},
 	{key: 'markDown', title: 'MarkDown转换', page: MarkDown},
-	{key: 'compressImg', title: '图片压缩', page: CompressImg}
+	{key: 'compressImg', title: '图片压缩', page: CompressImg},
+	{key: 'jsonFormat', title: 'JSON格式化', page: JsonFormat}
+	
 ]
 
 </script>

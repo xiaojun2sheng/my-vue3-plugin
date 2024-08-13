@@ -14,7 +14,8 @@
     "js-image-compressor": "^2.0.0",
     "moment": "^2.29.4",
     "v-code-diff": "^1.12.1",
-    "vue": "^3.2.13"
+    "vue": "^3.2.13",
+    "vue-json-pretty": "^2.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",

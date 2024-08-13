@@ -5,8 +5,8 @@
 				<span v-if="imgBlob?.size">图片质量：{{ imgBlob?.size / 1024 }} KB</span>
 				<span v-if="imgBlob?.size">图片宽度：{{ imgInfo.width }}</span>
 				<br/>
+				<a-image :width="200" :src="uploadImg" />
 				<a-upload
-					v-if="!uploadImg"
 					:showUploadList="false"
 					name="file"
 					@change="handleChange"
@@ -16,7 +16,6 @@
 						图片上传
 					</a-button>
 				</a-upload>
-				<a-image v-else :width="200" :src="uploadImg" />
 			</div>
 		</a-card>
 		<div class="img_tools" v-if="uploadImg">
