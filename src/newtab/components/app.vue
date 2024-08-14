@@ -31,17 +31,19 @@ import Diff from './pages/diff.vue'
 import MarkDown from './pages/markDown.vue'
 import CompressImg from './pages/compressImg.vue'
 import JsonFormat from './pages/jsonFormat.vue';
+import DragPage from './pages/dragPage.vue';
 
-let current = ref(['home'])
+let current = ref(['dragPage'])
 
-let pageVal = ref(CompressImg)
+let pageVal = ref(DragPage)
 
 const MenuList = [
 	{key: 'home', title: '首页', page: Home},
 	{key: 'diff', title: 'diff比对', page: Diff},
 	{key: 'markDown', title: 'MarkDown转换', page: MarkDown},
 	{key: 'compressImg', title: '图片压缩', page: CompressImg},
-	{key: 'jsonFormat', title: 'JSON格式化', page: JsonFormat}
+	{key: 'jsonFormat', title: 'JSON格式化', page: JsonFormat},
+	{key: 'dragPage', title: '拖拽页面', page: DragPage}
 	
 ]
 

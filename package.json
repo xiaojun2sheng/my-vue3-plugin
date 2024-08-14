@@ -15,6 +15,7 @@
     "moment": "^2.29.4",
     "v-code-diff": "^1.12.1",
     "vue": "^3.2.13",
+    "vue-draggable-next": "^2.2.1",
     "vue-json-pretty": "^2.4.0"
   },
   "devDependencies": {

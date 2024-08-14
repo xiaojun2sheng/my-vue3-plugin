@@ -24,7 +24,7 @@ onMounted(() => {
 <style lang="less" scoped>
 .popup_page{
 	width: calc(100% - 32px);
-	height: calc(100% - 40px);
+	height: calc(100% - 100px);
 	margin: 16px;
 }
 </style>
